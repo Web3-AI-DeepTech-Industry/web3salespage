@@ -62,9 +62,9 @@ const Homepage = () => {
       <section id="event">
         <VenueInfo />
       </section>
-
-    
-   
+      <Partners />
+      
+      {/* Scroll to Top Button */}
       <section id="contact">
         <ContactSection />
       </section>
