@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import logo_path from '../assets/img/logo.png'; // adjust path as needed
+import React from "react";
+import { Link } from "react-scroll";
+import logo_path from "../assets/img/logo.png"; // adjust path as needed
 
 const Header = () => {
   return (
@@ -8,8 +8,12 @@ const Header = () => {
       {/* Top Banner */}
       <div className="contactheader flex flex-col md:flex-row items-center justify-between h-auto md:h-10 w-full bg-purple-950 px-4 py-2 md:py-0">
         <p className="text-lime-50 text-center md:text-left">
-          <span className="text-base font-semibold">Viksit Bharat by 2047 </span>
-          <span className="text-sm font-normal">Innovate 💡, Collaborate 🤝, Celebrate 🎉</span>
+          <span className="text-base font-semibold">
+            Viksit Bharat by 2047{" "}
+          </span>
+          <span className="text-sm font-normal">
+            Innovate 💡, Collaborate 🤝, Celebrate 🎉
+          </span>
         </p>
 
         <div className="contact-us flex items-center mt-2 md:mt-0">
@@ -29,7 +33,10 @@ const Header = () => {
       </div>
 
       {/* Main Header with Logo and Menu */}
-      <div id="header-div" className="flex flex-col md:flex-row justify-between items-center w-full bg-white px-4 py-3 shadow-md">
+      <div
+        id="header-div"
+        className="flex flex-col md:flex-row justify-between items-center w-full bg-white px-4 py-3 shadow-md"
+      >
         {/* Logo */}
         <div className="logo w-28 h-auto mb-2 md:mb-0">
           <img src={logo_path} alt="BEF Logo" className="w-full h-auto" />
@@ -59,17 +66,12 @@ const Header = () => {
           >
             Delegate
           </Link>
-          <Link
+          <a
+            href="https://web3-ai-deeptech-industry.github.io/landingpage/"
             className="cursor-pointer text-gray-800 hover:text-purple-700 font-medium"
-            activeClass="active"
-            to="section1"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
           >
             Home
-          </Link>
+          </a>
         </nav>
       </div>
     </>
